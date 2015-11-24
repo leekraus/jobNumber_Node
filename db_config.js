@@ -1,0 +1,1 @@
+Config.mongoDBCred = 'mongodb://:@localhost:27017/app18351472';

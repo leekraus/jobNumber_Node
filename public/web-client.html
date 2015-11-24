@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/jqun.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+    <script src="js/highch/highcharts.js"></script>
+    <script src="js/highch/modules/exporting.js"></script>
+    <link rel="stylesheet" href="css/smoothness/jquery-ui.css" />
+    <script src="js/ui/jquery-ui.js"></script>
+    <style>
+        .ui-menu {
+            width: 150px;position: absolute;
+            top: 130px;
+        }
+        #back{
+            position: absolute !important;
+            bottom: 10px !important;
+            left: 15px;
+        }
+        #charts{
+            margin:10px 20px;
+        }
+        body{
+            padding: 10px;
+            text-align: center;
+            min-height: 600px;
+            font-size: 14px;
+        }
+        .header{
+            height: 90px;
+            background-color: #fefefe;
+            box-shadow: inset 0px 0px 15px 4px #cecece;
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #dadada;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .header div{
+            padding-top: 20px;
+            color: #3e3e3e;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: Verdana;
+        }
+        .page{
+            width: 90%;
+        }
+    </style>
+    <script src="js/web-client.js"></script>
+
+    <script id="calculations"></script>
+</head>
+    <body class="">
+    <div class="header">
+        <div >Javascript Library for Distributed Computing.</div>
+    </div>
+    <div id="res_next_prime"></div>
+    <div class="page">
+        <ul id="menu">
+            <li><a href="#">Servers</a></li>
+            <li><a href="#">Collaborators</a></li>
+            <li class="ui-state-disabled"><a href="#">Statistics</a></li>
+            <li>
+                <a href="#">Tasks</a>
+                <ul>
+                    <li><a id="primes-charts" href="#">Primes</a></li>
+                    <li class="ui-state-disabled"><a href="#">Belousov-Zhabotinsky Reaction</a></li>
+                    <li class="ui-state-disabled"><a href="#">Viral Replication</a></li>
+                    <li><a href="/stress" id="fill" target="_blank">Fill database</a></li>
+                    <li><a href="/index.html" id="client" target="_blank">Client Page</a></li>
+                    <li><a href="#" id="next_prime" >Check Next Number</a></li>
+                </ul>
+            </li>
+            <li style="display: none;">
+                <a href="#">Salzburg</a>
+                <ul>
+                    <li>
+                        <a href="#">Delphi</a>
+                        <ul>
+                            <li><a href="#">Ada</a></li>
+                            <li><a href="#">Saarland</a></li>
+                            <li><a href="#">Salzburg</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Delphi</a>
+                        <ul>
+                            <li><a href="#">Ada</a></li>
+                            <li><a href="#">Saarland</a></li>
+                            <li><a href="#">Salzburg</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Perch</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#">About</a></li>
+        </ul>
+        <div id="charts"></div>
+        <button id="back">< Back to Menu</button>
+
+    </div>
+</body>
+</html>
