@@ -3,7 +3,8 @@
 }
 .search-input{
     width: 96%;
-    margin: 10px;
+    margin: 10px auto;
+    display: block;
 }
 .jobsWrapper{
     margin: 50px 20px 0px;
