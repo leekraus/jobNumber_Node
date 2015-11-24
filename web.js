@@ -1,7 +1,7 @@
 /**
  * Created by YCotov on 11/23/15.
  */
-global.confComp    = {};
+global.confComp     = {};
 var express         = require("express");
 var path            = require('path');
 var app             = express();
@@ -21,9 +21,10 @@ app.listen(port, function() {
 /**
  * 
  */
-app.get('/home', function(request, res) {
+app.get('/', function(request, res) {
     
 });
+
 app.get('/stress', function(request, res) {
     
 });
